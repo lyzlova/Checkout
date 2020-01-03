@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="build/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <nav class="header-menu navbar navbar-expand-lg d-flex">
+            <div class="collapse navbar-collapse d-flex justify-content-between flex-md-row" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link border-right" href="#">HOME</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link border-right dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            FEATURES
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link border-right dropdown-toggle" href="#" id="navbarHowToUse" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            HOW TO USE
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarHowToUse">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link border-right" href="#">HISTORICAL DATA</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link border-right" href="#">FORUM</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link border-right dropdown-toggle" href="#" id="navbarAffiliates" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            AFFILIATES
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarAffiliates">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link border-right" href="#">CONTACT US</a>
+                    </li>
+                </ul>
+                <div class="btn-group align-self-stretch" role="group" aria-label="Basic example">
+                    <button class="btn border border-success btn-navbar rounded-0" type="button">DOWNLOAD</button>
+                    <button class="btn border border-success btn-navbar rounded-0" type="button">BUY</button>
+                </div>
+            </div>
+        </nav>
+
+        <div class="forex-baner"></div>
+
+        <form class="container d-flex flex-column justify-content-between">
+            <div class="form-billing d-flex flex-column flex-md-row justify-content-between">
+
+                <div class="card-billing border rounded">
+                    <div class="billing">
+                        <div class=" d-flex flex-md-row billing-information">
+                            <h3 class="d-flex billing-number border rounded align-items-center justify-content-center">1
+                            </h3>
+                            <h3 class="billing-title">Billing information</h3>
+                        </div>
+                        <div class="form-group group-full-name">
+                            <div class="d-flex justify-content-between flex-wrap label-form-name">
+                                <label for="name">Full name</label>
+                                <div class="form-group form-check form-check-businessPurchase">
+                                    <input class="form-check-input" type="checkbox" id="businessPurchase"
+                                        name="businessPurchase">
+                                    <label class="form-check-label" for="businessPurchase">Business purchase</label>
+                                </div>
+                                <input class="form-control" type="text" id="name">
+                            </div>
+                        </div>
+                        <div class="form-group group-email">
+                            <div class="d-flex justify-content-between flex-wrap label-form-name">
+                                <label for="email">Email</label>
+                                <div class="form-group form-check form-check-licence">
+                                    <input class="form-check-input" type="checkbox" id="licence" name="licence">
+                                    <label class="form-check-label" for="licence">License for another
+                                        person</label>
+                                </div>
+                                <input class="form-control" type="text" id="email" name="email"
+                                    placeholder="examplegvdfgfdhbvc@gmail.com">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <select class="form-control" id="country" name="country">
+                                <option>Ukraine</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="payment-methot">
+                        <div class="payment-methot-title d-flex flex-md-row">
+                            <h3 class="billing-number d-flex  border rounded align-items-center justify-content-center">
+                                2
+                            </h3>
+                            <h3 class="billing-title">Payment method</h3>
+                        </div>
+                        <div class="group-payment d-flex">
+                            <div class="payment rounded-left d-flex" id="payment-master-card">
+                                <div class="payment-visa-group payment-master-card"></div>
+                                <div class="payment-visa-group payment-visa"></div>
+                            </div>
+                            <div class="payment payment-wire" id="payment-wire"></div>
+                            <div class="payment payment-qiwi" id="payment-qiwi"></div>
+                            <div class="payment payment-yandex" id="payment-yandex"></div>
+                            <div class="payment payment-webmoney" id="payment-webmoney"></div>
+                            <div class="payment rounded-right payment-paypal" id="payment-paypal"></div>
+                        </div>
+                        <div class="credit-card-form d-flex justify-content-between">
+                            <div class="card-number">
+                                <label class="credit-card-label" for="cardNumber">Card Number</label>
+                                <input class="form-control card-info" id="cardNumber" type="text"
+                                    placeholder="____ ____ ____ ____">
+                            </div>
+                            <div class="expiration-date">
+                                <label class="credit-card-label" for="expirationDate">Expiration Date</label>
+                                <input class="form-control card-info" id="expirationDate" type="text" placeholder="/">
+                            </div>
+                            <div class="cvv">
+                                <label class="credit-card-label" for="cvv">CVV</label>
+                                <input class="form-control card-info" id="cvv" type="text" placeholder="***">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card-summary">
+                    <h3 class="billing-title summary-title">Summary</h3>
+                    <div class="forex-tester d-flex">
+                        <div class="forex-tester-image"></div>
+                        <div class="d-flex flex-column justify-content-between">
+                            <h5 class="forex-text">Forex Tester 4</h5>
+                            <div class="d-flex">
+                                <div class="counter d-flex ">
+                                    <button class="btn-counter border js-decrement" type="button">-</button>
+                                    <p class="carent js-total">1</p>
+                                    <button class="btn-counter border js-increment" type="button">+</button>
+                                </div>
+                                <div class="d-flex align-items-end">
+                                    <p class="old-price">$299.00</p>
+                                    <span class="new-price">$159.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discount d-flex justify-content-between">
+                        <p class="discount-subtitle">Discount</p>
+                        <span class="summary-decrement">-$140</span>
+                    </div>
+                    <div class="vip-data-service d-flex justify-content-between">
+                        <div class="forex-tester-vip-image border"></div>
+                        <div class="d-flex align-items-center">
+                            <h5 class="vip-text">VIP Data Service</h5>
+                            <div class="d-flex align-self-end">
+                                <p class="old-price">$599.88</p>
+                                <span class="new-price">$199.00</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex justify-content-between discount">
+                        <p class="discount-subtitle">Discount</p>
+                        <span class="summary-decrement">-$400.88</span>
+                    </div>
+                    <div class="payment-term d-flex justify-content-between align-items-center">
+                        <p class="forex-text align-self-center">Payment term</p>
+                        <span class="new-price align-self-start">Annual</span>
+                    </div>
+                    <div class="total d-flex justify-content-between align-items-center">
+                        <p class="total-subttitle m-0">Total</p>
+                        <span class="total-prise">$358</span>
+                    </div>
+                    <div class="total-discount d-flex justify-content-between">
+                        <p class="forex-text">Total discount</p>
+                        <span class="summary-decrement">-$540.88</span>
+                    </div>
+                    <div class="d-flex justify-content-between">
+                        <p class="forex-text">Proceeding annual payment:
+                            <br><span class="payment-starting">(starting from 8/30/2020)</span>
+                        </p>
+                        <span class="new-price">$199.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="form-group form-group-submit form-check d-flex justify-content-between align-items-center">
+                <input class="form-check-input ml-0" type="checkbox" id="couponCode" name="couponCode">
+                <label class="form-check-label ml-5" for="couponCode">I have a coupon code</label>
+                <button class="btn-submit border rounded align-items-start" type="submit">SUBMIT ORDER</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="build/js/script.js"></script>
+</body>
+
+</html>

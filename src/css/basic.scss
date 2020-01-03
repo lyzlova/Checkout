@@ -1,0 +1,403 @@
+html {
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+label,
+.form-control,
+.form-group {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: px-to-rem(16px);
+    line-height: 1.5;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+img {
+    display: block;
+    height: auto;
+    width: 100%;
+}
+
+a {
+    color: $color-title;
+}
+
+.form-check,
+.nav-link,
+.badge,
+.header-menu,
+.container {
+    padding: 0;
+}
+
+.btn-navbar,
+.nav-link,
+.form-control,
+.carent,
+.btn-counter,
+.new-price,
+.summary-decrement,
+.discount-subtitle,
+.payment-term,
+.forex-text,
+.form-check-label,
+.payment-starting,
+.vip-text {
+    font-size: px-to-rem(14px);
+}
+
+.billing-number,
+label,
+.btn-submit,
+.credit-card-label,
+.carent,
+.btn-counter,
+.new-price,
+.old-price,
+.summary-decrement,
+.total-prise {
+    font-weight: bold;
+}
+
+.badge,
+.form-check-label,
+.form-control,
+.btn-counter,
+.discount-subtitle,
+.payment-term,
+.forex-text,
+.vip-text,
+.total-subtitle,
+.form-check-label {
+    color: $color-title;
+}
+
+.btn-navbar,
+.btn-submit {
+    background: $color-submit;
+    color: $color-write;
+}
+
+.payment-starting,
+.old-price {
+    color: $color-old-price;
+}
+
+.title,
+.billing-number,
+.billing-title {
+    font-size: px-to-rem(18px);
+}
+
+.container {
+    max-width: px-to-rem(1022px);
+    margin: 0 auto;
+}
+
+.header-menu {
+    margin-bottom: px-to-rem(20px);
+    max-width: px-to-rem(1022px);
+    box-shadow: 0 .425rem .55rem rgba(0, 0, 0, 0.35);
+}
+
+.nav-link {
+    padding: px-to-rem(13px) px-to-rem(9px) px-to-rem(15px) px-to-rem(10px);
+    ;
+}
+
+.nav-pills {
+    flex-basis: 70%;
+}
+
+.btn-group {
+    flex-basis: 15%;
+}
+
+.forex-baner {
+    background-image: url(../img/tester.svg);
+    height: px-to-rem(207px);
+    margin-bottom: px-to-rem(25px);
+}
+
+.billing {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+    padding-bottom: px-to-rem(30px);
+}
+
+.billing-number {
+    width: px-to-rem(37px);
+    height: px-to-rem(37px);
+    background-color: $color-step;
+    color: $color-write;
+    margin-right: px-to-rem(19px);
+}
+
+.billing-title {
+    margin: 0;
+    padding: px-to-rem(12px) 0 0 0;
+}
+
+.billing-information {
+    margin-bottom: px-to-rem(27px);
+}
+
+.payment-methot-title {
+    margin-bottom: px-to-rem(19px);
+}
+
+.card-billing {
+    padding: px-to-rem(29px) px-to-rem(25px) 0 px-to-rem(29px);
+    margin-bottom: px-to-rem(19px);
+    flex-basis: 57.2%;
+}
+
+.form-billing {
+    max-width: px-to-rem(1022px);
+}
+
+label {
+    font-size: px-to-rem(12px);
+    color: $color-label;
+    opacity: 0.7;
+    padding-top: px-to-rem(8px);
+}
+
+.form-check-input {
+    margin-top: px-to-rem(3px);
+    width: px-to-rem(20px);
+    height: px-to-rem(20px);
+}
+
+.form-check-businessPurchase {
+    margin-bottom: px-to-rem(5px);
+}
+
+.form-check-licence {
+    margin-bottom: px-to-rem(8px);
+}
+
+.group-full-name {
+    margin-bottom: px-to-rem(16px);
+}
+
+.form-check-label {
+    margin-left: px-to-rem(18px);
+    font-size: px-to-rem(12px);
+    opacity: 0.5;
+    padding: px-to-rem(4px) px-to-rem(1px) 0 0;
+}
+
+.form-control {
+    opacity: 0.5;
+    padding: px-to-rem(28px) px-to-rem(19px) px-to-rem(26px);
+}
+
+.group-email,
+.group-payment {
+    margin-bottom: px-to-rem(6px);
+}
+
+.payment-visa-group,
+.payment {
+    width: px-to-rem(88px);
+    height: px-to-rem(54px);
+}
+
+.payment-methot {
+    padding: px-to-rem(25px) 0 px-to-rem(27px);
+}
+
+.payment-master-card {
+    background: url(../img/master_card.svg) no-repeat center;
+}
+
+.payment-visa {
+    background: url(../img/visa.svg) no-repeat center;
+}
+
+.payment-wire {
+    background: url(../img/wire.svg) no-repeat center;
+}
+
+.payment-qiwi {
+    background: url(../img/qiwi.svg) no-repeat center;
+}
+
+.payment-yandex {
+    background: url(../img/yandex_money.svg) no-repeat center;
+}
+
+.payment-webmoney {
+    background: url(../img/webmoney.svg) no-repeat center;
+}
+
+.payment-paypal {
+    background: url(../img/paypal.svg) no-repeat center;
+}
+
+.payment {
+    border: 1px solid rgba(83, 88, 105, 0.1);
+}
+
+.payment:hover {
+border: 2px solid rgba(108, 205, 108, 0.5);
+box-sizing: border-box;
+border-radius: px-to-rem(5px);
+}
+
+.btn-submit {
+    padding: px-to-rem(12px) px-to-rem(104px) px-to-rem(13px) px-to-rem(97px);
+    line-height: 180%;
+}
+
+.card-number {
+    flex-basis: 47%;
+}
+
+.card-info {
+    padding: px-to-rem(23px) 0 px-to-rem(27px) px-to-rem(19px);
+}
+
+.expiration-date,
+.cvv {
+    flex-basis: 21%;
+}
+
+.credit-card-label {
+    font-size: px-to-rem(12px);
+    color: $color-label;
+    opacity: 0.7;
+    margin-bottom: px-to-rem(5px);
+}
+
+.card-summary {
+    padding: px-to-rem(13px) px-to-rem(30.2px) 0;
+    flex-basis: 39.9%;
+    background: url(../img/Subtract.svg) no-repeat;
+}
+
+.summary-title {
+    margin-bottom: px-to-rem(32px);
+}
+
+.carent {
+    margin: 0 px-to-rem(12px);
+    color: $color-carent;
+}
+
+.btn-counter {
+    background: $color-write;
+    opacity: 0.5;
+}
+
+.forex-tester-image {
+    margin-right: px-to-rem(21px);
+}
+
+.forex-tester-vip-image {
+    background: url(../img/card.svg) no-repeat center;
+    background-color: $color-write;
+    width: px-to-rem(50px);
+    height: px-to-rem(50px);
+}
+
+.counter {
+    margin-right: px-to-rem(94px);
+}
+
+.vip-data-service {
+    margin-top: px-to-rem(8px);
+    margin-bottom: px-to-rem(9px);
+}
+
+.new-price {
+    color: $color-new-price;
+    margin-left: px-to-rem(15px);
+}
+
+.old-price {
+    position: relative;
+    font-size: px-to-rem(12px);
+    margin-bottom: 0;
+}
+
+.summary-decrement {
+    color: $color-submit;
+}
+
+.discount-subtitle {
+    margin-bottom: px-to-rem(10px);
+}
+
+.payment-term {
+    border-bottom: 1px dashed rgba(0, 0, 0, 0.1);
+    padding-bottom: px-to-rem(23px);
+}
+
+.forex-tester {
+    margin-bottom: px-to-rem(13px);
+}
+
+.vip-text {
+    margin-right: px-to-rem(60px);
+}
+
+.forex-tester-image {
+    background: url(../img/forex.svg);
+    width: px-to-rem(50px);
+    height: px-to-rem(50px);
+}
+
+.total {
+    margin-top: px-to-rem(18px);
+    margin-bottom: px-to-rem(3px);
+}
+
+.total-prise {
+    font-size: px-to-rem(24px);
+    color: $color-carent;
+}
+
+.old-price:before {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    content: '';
+    width: px-to-rem(45px);
+    height: 0px;
+    border: 1px solid $color-old-price;
+    opacity: 0.5;
+}
+
+.total-discount {
+    margin-bottom: px-to-rem(5px);
+}
+
+.form-group-submit {
+    max-width: px-to-rem(584px);
+    margin-bottom: px-to-rem(70px);
+}
+
+.form-check-label {
+    font-weight: normal;
+}
